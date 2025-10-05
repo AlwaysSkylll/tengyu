@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>集团简介-浙江腾宇新材料科技有限公司</title>
+    <title>公司介绍-浙江腾宇新材料科技有限公司</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <style>
@@ -62,6 +62,58 @@
         border-radius: 20px;
         padding: 8px 35px;
       }
+
+      .brand-detail {
+        z-index: 10;
+        position: relative;
+        color: #FFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 2;
+        text-align: left;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      /* 合作伙伴自适应网格 */
+      .partner-grid {
+        --card-gap: 20px;
+        --card-radius: 12px;
+        --max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: var(--card-gap);
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .partner-card {
+        background: #fff;
+        border-radius: var(--card-radius);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 3 / 2;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .partner-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+      .partner-card img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      @media (max-width: 768px) {
+        .partner-grid { gap: 12px; padding: 0 12px; }
+        .partner-card { padding: 14px; }
+      }
+
     </style>
 
     <link rel="shortcut icon" href="/static/home/images/favicon.ico" />
@@ -102,7 +154,7 @@
               <a href="./product.html" class="OneNav"><span>产品中心</span> </a>
             </li>
             <li class="">
-              <a href="./news.html" class="OneNav"><span>咨询动向</span> </a>
+              <a href="./news.html" class="OneNav"><span>资讯动向</span> </a>
             </li>
             <li class="">
               <a href="./about.html" class="OneNav"><span>合作伙伴</span> </a>
@@ -166,10 +218,9 @@
                 <dl class="navs__item pr-50">
                   <dt class="f18"><a href="./about.html">关于我们</a></dt>
                   <dd>
-                    <p><a href="/about.html#profile">集团简介</a></p>
-                    <p><a href="/about.html#segment">产业板块</a></p>
-                    <p><a href="/about.html#history">发展历程</a></p>
-                    <p><a href="./brand.html">品牌理念</a></p>
+                    <p><a href="/about.html#profile">公司介绍</a></p>
+                    <p><a href="/about.html#segment">设备设施</a></p>
+                    <p><a href="/about.html#brand">品牌理念</a></p>
                     <p><a href="./contact.html">联系我们</a></p>
                   </dd>
                 </dl>
@@ -269,7 +320,7 @@
       >
         <div class="f54 font-weight wow fadeInDown">关于我们</div>
         <div class="w40 f24 wow fadeInUp">
-          科技滨化 | 数字滨化 | 国际滨化 | 幸福滨化
+          安如磐石 | 化智无忧 | 匠心服务 | 智造未来
         </div>
       </div>
       <img
@@ -293,12 +344,11 @@
       <section class="shadow-dark z5">
         <div class="w80">
           <div class="flex subnav" style="min-height: 50px">
-            <a href="/about.html#profile" class="on">集团简介</a>
-            <a href="/about.html#segment" class="">产业板块</a>
-            <a href="/about.html#history" class="">发展历程</a>
-            <a href="./brand.html" class="">品牌理念</a>
+            <a href="/about.html#profile" class="on">公司介绍</a>
+            <a href="/about.html#segment" class="">设备设施</a>
+            <a href="/about.html#brand" class="">品牌理念</a>
+            <a href="/about.html#partner" class="">合作伙伴</a>
             <a href="./contact.html" class="">联系我们</a>
-            <a href="https://befar.zhiye.com/" class="">加入我们</a>
           </div>
         </div>
       </section>
@@ -313,22 +363,13 @@
           <div class="wmax text">
             <div class="line-height2-8 color-666">
               <p style="text-indent: 2em">
-                滨化集团始建于1968年，1970年投产，现已成为主业突出、产业链完整的综合型化工企业集团，拥有氯碱、石化、新能源、新材料和特种化学品五大发展板块。产品氯丙烯、三氯乙烯、粒碱、食品级片碱、聚苯硫醚市场占有率全国第一，烧碱、环氧丙烷上榜&ldquo;好品山东&rdquo;高端化工品牌，产品远销全球100多个国家和地区。截至2024年底，已累计实现利税779.10亿元，上缴税金568.87亿元。
+                浙江腾宇新材料科技有限公司的前身是杭州高晶精细化工有限公司，公司成立于1999年。是一家集研发、生产、销售和服务于一体的专业化学试剂公司。经过20年来的开拓发展，公司取得了长足进步，在浙江省试剂行业中位列前茅。其中公司拥有“无水乙醇”、“丙酮”浙江省质量信得过产品称号;在杭州市安全标准化达标评审中成为首批模范企业;并在2006年通过了9001质量体系、14000环境体系认证。公司经过自身的不懈努力，使企业形象及“高晶”品牌效应在这几年中有了大幅度的提升。
               </p>
               <p style="text-indent: 2em">
-                集团核心企业浙江腾宇新材料科技有限公司（简称滨化股份，SH601678）于2010年2月在上交所成功挂牌上市。公司现为中国氯碱工业协会理事，是山东省重点产业链链主企业，荣获全国和谐劳动关系创建示范企业、全国最具社会责任企业、中国民营企业500强、中国制造业企业500强、中国制造业民营企业500强、山东慈善奖、山东社会责任企业等荣誉称号，连续十一年获评全国重点用能行业产品能效&ldquo;领跑者&rdquo;标杆企业。
+                为加快发展实现企业腾飞，2019年初公司本部整体搬迁到德清境内的洛舍镇杨树湾工业园内，正式更名为浙江腾宇新材料科技有限公司，现有厂区占地面积10000㎡、总建筑面积12000㎡、绿化面积3500㎡。在这片热土上，我们建立起了高标准的化学试剂生产车间、危化品仓库、化学品储罐区等一流厂房设备。配置了拥有自主知识产权的化学试剂净化灌装和稀释剂生产的PLC自动化流水线装置。完成了企业的升级改造和功能再造。公司具有完善的管理体系和雄厚的技术研发团队，并与浙江大学、江南大学等院校强强联合，开发出了一系列环保无污染、工艺先进、符合国家产品导向的高端产品，深受用户的信赖和好评。我们已经构筑了专业的、高效的、优质的产能体系，本着“追求完美品质技术，体现精湛的工艺，优质诚信的服务，满足客户的需求”的质量方针，精心打造一流的化学试剂专业企业，为中国化学试剂的发展、工农业生产和提高生活质量竭诚服务。
               </p>
               <p style="text-indent: 2em">
-                综合全球化工发展大势、中国化工探索实践和滨州面临的重大机遇，滨化集团开创性地规划了面向未来的&ldquo;北鲲计划&rdquo;。以&ldquo;新能源+化工&rdquo;耦合为发展路径，构建战略科技力量体系，致力在滨州北部建设国家级新能源化工产业基地。
-              </p>
-              <p style="text-indent: 2em">
-                滨化始终将科创作为决胜未来的核心竞争力，构建了以本部战略创新研究院为主体,链接多个异地实验室的科创联盟体系。当前，与山东大学联合共建&ldquo;中国科技与产业整合研究中心&rdquo;,致力成为国家战略与产业变革的智慧引擎，推动研究成果向政策制定、技术转化与资本赋能高效落地;设立发布&ldquo;北鳀青年科学家奖&rdquo;,每年奖金1000万元，全力打造&ldquo;北鲲&middot;高校一院士创新港&rdquo;&ldquo;北海大型化工新材料中试基地&rdquo;旨在构建科技赋能产业发展的生态体系。
-              </p>
-              <p style="text-indent: 2em">
-                当前滨化制定了全新的&ldquo;12345&rdquo;战略定位和发展逻辑，擘画了&ldquo;科技滨化、数字滨化、国际滨化、幸福滨化&rdquo;的恢弘愿景。滨化坚持价值创造与人文精神并重，厚植蝶变求新、敏锐洞察的变革文化，在生态构建、科技创新、绿色转型、国际拓展和社会责任等方面持续发力，以更加开放的视野和胸怀与时代共行。
-              </p>
-              <p style="text-indent: 2em">
-                穿云九重，驭风万里。面向未来，滨化集团将谋定战略布局、坚定发展信心，以国际化视野谋划开放合作，以科技创新驱动跨越发展，致力于成为绿色化工、低碳转型的探索者和实践者，为社会、客户、股东、员工创造最大价值，为推动全球化工行业发展作出更大贡献！
+                浙江腾宇新材料科技有限公司坚持技术精、质量优、信誉佳的发展理念，不断整合优质资源，为市场提供质优价廉产品和服务，成为您值得信赖的合作伙伴。
               </p>
             </div>
             <div class="profilenumUl mt-60 wmax flex-between">
@@ -428,8 +469,8 @@
       <section class="bg-f7 pb-70 segment">
         <div class="w80">
           <div class="tit flex-center-center pt-70 pb-70 flex-column">
-            <div class="f44 font-weight">产业布局</div>
-            <div class="f20 text-uppercase color-666">Industrial layout</div>
+            <div class="f44 font-weight">设备设施</div>
+            <div class="f20 text-uppercase color-666">Equipment and facilities</div>
           </div>
           <div class="posi">
             <div class="swiper-container" id="segmentSwiper">
@@ -548,698 +589,51 @@
           </div>
         </div>
       </section>
-      <div class="orient" id="history"></div>
+      <div class="orient" id="brand"></div>
       <section class="history posi pb-70 color-white">
         <div class="clound"></div>
         <div class="title wmax flex-center-center pt-70 pb-70 flex-column z5">
-          <div class="f44 font-weight">发展历程</div>
-          <div class="f20 text-uppercase">development history</div>
+          <div class="f44 font-weight">品牌理念</div>
+          <div class="f20 text-uppercase">BRAND CONCEPT</div>
         </div>
-        <div class="w80 posi z5 fanZhan">
-          <div
-            class="prev flex-center-center cursor bg-white color-blue radius50"
-          >
-            <i class="iconfont icon-jiantou_xiangzuo_o f24"></i>
-          </div>
-          <div
-            class="next flex-center-center cursor bg-white color-blue radius50 ml-20"
-          >
-            <i class="iconfont icon-jiantou_xiangyou_o f24"></i>
-          </div>
-          <div class="swiper-container history-top mt-70 mb-70">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">1968</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/483581ad5b4ebf8fd2f5edb724614f90.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    由化工实验厂改名为北镇化工厂，开始筹建氯碱项目
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">1970</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/71181033831565aecd5144835f76c27e.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    10月22日年产2200吨的氯碱项目一期工程投产
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">1992</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/c040c9fa9f357c9228757c6522482c0b.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    滨州化工厂新区石化项目建成投产
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">1993</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/bc2bfbf9661bc51e424d0a61f3bb705e.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    年利税突破5000万元
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">1999</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/2d549758fb849b2e5bfc5cdc3d2c812b.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    仅用9个月时间将年产4500吨环氧丙烷装置改扩到年产2万吨，并一次开车成功
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2000</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/64af333cae3e733a8ca196619dc83fb6.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    中海沥青（滨州）有限公司、沾化经贸有限责任公司组建成立
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2004</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/b8aaa3af7120c20caad9a16a701e656b.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    在沾化组建了滨化海源盐化有限公司。成立龙口滨港液体化工码头有限公司
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2006</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/e4040a9d77d18a092f0fcffd722a9d51.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    山东滨化滨阳燃化有限公司注册成立，在阳信开工建设
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2007</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/a95ed088adb758e59b995949203db228.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    滨化东瑞化工公司筹建拉开序幕
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2010</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/88d1b1c2e6e4adde3dbd4e54734fb0f8.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    2月23日，浙江腾宇新材料科技有限公司在上海证券交易所成功上市，募集资金20.9亿元
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2012</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/3b677205197168e7b7ec2e69f296b063.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    化工分公司整体搬迁暨综合技术改造项目正式开工
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2017</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/732697777db5fc2a9fe8663afd976c2a.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    布局氢能产业，建成国内第一套氢气净化充装示范装置,是国内首套万吨级、汽车用燃料氢生产示范基地
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2020</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/cd585ceedc80ebee14f2981bec438d3f.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    滨州临港化工产业园碳三碳四综合利用项目在北海开工建设。早在2013年，滨化就已布局北海
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2022</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20230617/3cc9ba088991b34fbfaa581048c1505d.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    全面实施组织架构改革，成立五大事业部、五大中心，锚定&ldquo;12345&rdquo;发展战略，全面打造生态平台型企业
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2024</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20250226/31174a6d471991fd4b8c73548d57f3e6.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    开创性规划面向未来的&ldquo;北鲲计划&rdquo;。以&ldquo;新能源+化工&rdquo;耦合为发展路径，致力在滨州北部建设具有世界影响力的国家级新能源化工产业基地
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-              <div class="swiper-slide flex-center-center">
-                <div class="w70">
-                  <div class="flex-center-center wapFlex">
-                    <div class="text-nowrap pr-70">
-                      <div class="years DIN font-weight">2025</div>
-                    </div>
-                    <div class="w40">
-                      <img
-                        src="./uploads/img/20250226/ccec3876781eb32d2618c5ef7fd7e0d2.jpg"
-                        class="historyImg"
-                        style="object-fit: cover"
-                        width="100%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="line-height mt-15 f20 flex-center-center text-center"
-                  >
-                    碳三碳四综合利用项目全面投产
-                  </div>
-                </div>
-                <!-- <div class="w70 flex-between-center wapFlex ">
-                            <div class="w40 p10"></div>
-                            <div class="w60 pl-50">
-                             
-                               
-                            </div>
-                           </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wap-show mt-50 mb-50 text-center z5">
-          <img
-            src="/static/home/images/shou-w.png"
-            width="80"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div class="posi historyBot z5">
-          <div class="w80">
-            <div class="swiper-container history-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">1968</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">1970</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">1992</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">1993</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">1999</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2000</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2004</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2006</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2007</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2010</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2012</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2017</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2020</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2022</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2024</div>
-                </div>
-                <div class="swiper-slide flex-center-center flex-column">
-                  <div class="yuan posi flex-center-center">
-                    <i class="bg-white radius50"></i>
-                  </div>
-                  <div class="years mt-25 f20 DIN">2025</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="brand-detail">
+          <div>企业文化：树立腾宇品牌形象，创造腾宇人的梦想，成就腾宇人的骄傲；</div>
+          <div>企业精神：诚信，务实，创新，争先；</div>
+          <div>企业追求：致力行业持续发展；</div>
+          <div>经营理念：诚信为本，以人为本，品质为根；</div>
+          <div>员工素质：责任感，团结，诚信，敬业；</div>
+          <div>质量方针：科学管理，精心制造，顾客满意，持续改进；</div>
+          <div>人才观：德才兼备，以德为先，先德定人。</div>
         </div>
       </section>
-      <script>
-        var galleryThumbs = new Swiper('.history-thumbs', {
-          breakpoints: {
-            //当宽度大于等于320
-            320: {
-              spaceBetween: 0,
-              slidesPerView: 4,
-            },
-            750: {
-              spaceBetween: 0,
-              slidesPerView: 5,
-            },
-            1240: {
-              spaceBetween: 0,
-              slidesPerView: 6,
-            },
-            1440: {
-              spaceBetween: 0,
-              slidesPerView: 7,
-            },
-          },
-          navigation: {
-            nextEl: '.history .next',
-            prevEl: '.history .prev',
-          },
-          freeMode: true,
-          watchSlidesVisibility: true,
-          watchSlidesProgress: true,
-        })
-        var galleryTop = new Swiper('.history-top', {
-          spaceBetween: 10,
-          // autoHeight: true,
-          navigation: {
-            nextEl: '.history .next',
-            prevEl: '.history .prev',
-          },
-          thumbs: {
-            swiper: galleryThumbs,
-          },
-        })
-      </script>
+
+      <div class="orient" id="partner"></div>
+      <section class="posi pb-70 color-white">
+        <div class="title wmax flex-center-center pt-70 pb-70 flex-column z5">
+          <div class="f44 font-weight">合作伙伴</div>
+          <div class="f20 text-uppercase">BUSINESS PARTNER</div>
+        </div>
+        <div class="partner-grid" role="list" aria-label="合作伙伴Logo">
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner1.png" alt="合作伙伴1" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner2.png" alt="合作伙伴2" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner3.png" alt="合作伙伴3" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner4.png" alt="合作伙伴4" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner5.png" alt="合作伙伴5" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner6.png" alt="合作伙伴6" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner7.png" alt="合作伙伴7" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner8.png" alt="合作伙伴8" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner9.png" alt="合作伙伴9" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner10.png" alt="合作伙伴10" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner11.png" alt="合作伙伴11" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner12.png" alt="合作伙伴12" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner13.png" alt="合作伙伴13" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner14.png" alt="合作伙伴14" /></div>
+          <div class="partner-card" role="listitem"><img src="/static/home/images/partner15.png" alt="合作伙伴15" /></div>
+        </div>
+      </section>
     </main>
     <!-- 底部 -->
-    <footer class="swiper-slide footer bg-blue" style="">
+  <footer class="swiper-slide footer bg-blue">
       <div class="content color-white">
         <div class="w80">
           <div class="top flex-between pt-70 pb-70">
@@ -1250,8 +644,8 @@
               <div class="line mt-25 mb-25"></div>
               <dd><a href="/about.html#profile">公司介绍</a></dd>
               <dd><a href="/about.html#segment">设备设施</a></dd>
-              <dd><a href="./brand.html">品牌理念</a></dd>
-              <dd><a href="/about.html#history">合作伙伴</a></dd>
+              <dd><a href="/about.html#brand">品牌理念</a></dd>
+              <dd><a href="/about.html#partner">合作伙伴</a></dd>
               <dd><a href="./contact.html">联系我们</a></dd>
             </dl>
             <dl>
@@ -1314,23 +708,13 @@
                 <li class="ml-25 mr-25">
                   <div class="img p15">
                     <img
-                      src="/uploads/img/20230615/acc854b21c84bb18278f59fd54e94e57.jpg"
+                      src="/uploads/img/20230615/acc854b21c84bb18278f59fd54e94e57.png"
                       alt=""
                       srcset=""
                     />
                   </div>
                   <div class="txt f14">腾宇抖音号</div>
                 </li>
-                <!-- <li>
-                  <div class="img p15">
-                    <img
-                      src="/uploads/img/20230616/31b99d42d60f8fc6b3d95d749132ed05.jpg"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                  <div class="txt f14">滨化股份公众号</div>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -1339,25 +723,12 @@
       <div class="bottom pt-20 color-white pb-20">
         <div class="w80 flex-between-center wapFlex">
           <div>
-            Copyright 2023 浙江腾宇新材料科技有限公司 版权所有
+            Copyright 2025 腾宇新材料科技有限公司版权所有
             <a href="https://beian.miit.gov.cn/" target="_blank" class="mr-10"
-              >鲁ICP备05034382号-1
+              >浙ICP备11027207号
             </a>
-            <a href="http://www.hfsxw.cn/" target="_blank">思讯网络</a>
           </div>
 
-          <div class="pc-show">
-            <select
-              class="select-txt hmax z5 pl-20 f16 color-white"
-              onchange="window.open(this.value);"
-              target="_blank"
-            >
-              <option value="友情链接" selected="selected" class="on">
-                — 友情链接 —
-              </option>
-              <option value="https://www.baidu.com/">百度</option>
-            </select>
-          </div>
         </div>
       </div>
     </footer>
@@ -1371,14 +742,14 @@
             class="flex-center-center flex-column wmax hmax"
           >
             <div class="messageJump color-blue">
-              <i class="iconfont icon-dianhua1 color f26"></i>
+              <img src="/static/home/images/phoneCall.png" class="ewmImg1" alt="电话联系" />
             </div>
-            <span class="block">电话</span>
+            <span class="block">电话联系</span>
           </a>
           <div class="box">
             <div class="box_inner">
               <div class="flex-center-center mr-10 bg-f5 icon radius50">
-                <i class="iconfont icon-dianhua1 color f20"></i>
+                <img src="/static/home/images/kefu.png" class="ewmImg1" alt="客服" />
               </div>
               <p><span>0572-8033975</span> <em>咨询热线</em></p>
             </div>
@@ -1390,20 +761,11 @@
             class="flex-center-center flex-column wmax hmax"
           >
             <div>
-              <i class="iconfont icon-peizhitubiaosvg- color f26"></i>
+              <img src="/static/home/images/1688.png" class="ewmImg1" alt="1688网店" />
             </div>
             <span class="block">1688网店</span>
           </a>
-          <div class="box">
-            <p>
-              <img
-                src="/static/home/images/fkEwm.jpg"
-                class="ewmImg"
-                alt="预约二维码"
-              />
-              <span>预约二维码</span>
-            </p>
-          </div>
+        
         </li>
         <!--<li class="side_bar_wechat">-->
         <!--    <a href="javascript:;" class="flex-center-center flex-column wmax hmax">-->
