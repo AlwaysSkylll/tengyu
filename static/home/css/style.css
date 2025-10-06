@@ -244,7 +244,7 @@ header.bg .h_nav .burger{ background-color: #333;}
 .idxPartnersTit{ position: absolute; width: 40vw; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 10; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); }
 .idxPartnersTit:hover{ box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);}
 .idxCoopreImg{ z-index: 5;}
- .idxCoopreImg img{ max-width: 300px; max-height: 120px; position:absolute; opacity:0; animation: ani2_img 12s linear infinite 0s; -webkit-animation: ani2_img 12s linear infinite 0s; }
+ .idxCoopreImg img{ max-width: 300px; max-height: 120px; position:absolute;  }
  /* */
 .idxCoopreImg img:nth-child(1){ left: 15.7%; top: 30%;  animation-delay: 0s;}
 .idxCoopreImg img:nth-child(2){  left:17.6%; top: 68%; animation-delay: 2s;}
@@ -316,7 +316,7 @@ header.bg .h_nav .burger{ background-color: #333;}
 
 
 
-footer{ background: url(../images/footerBg.jpg) no-repeat center center; background-size: cover; }
+footer{ background: #185ab2; }
 footer dt{ line-height: 1;}
 footer dl{ line-height: 2.4;} 
 footer .line{ background-color: rgba(255, 255, 255, .25); width: 60px; height: 2px;}
