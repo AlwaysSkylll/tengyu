@@ -990,7 +990,7 @@ div.close-btn:hover{ transform: rotate(180deg); opacity: 1;}
 
 .side_bar>ul>li a span {font-size: 12px;line-height: 2}
 
-  .messageJump  { animation: messageJump .5s linear infinite; -webkit-animation: messageJump .5s linear infinite; }
+  /* .messageJump  { animation: messageJump .5s linear infinite; -webkit-animation: messageJump .5s linear infinite; } */
 
 
 
