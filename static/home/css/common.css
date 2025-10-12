@@ -324,7 +324,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {color: #999;}
 .page-aside-item .icon {width: 24px}*/
 #toolbar{ position: fixed; bottom: 0; left: 0; width: 100%; z-index: 150; display: none;}
 #toolbar a {width: 25%;padding: 10px 0;text-align: center;color: #fff; display: flex; align-items: center; justify-content: center; flex-direction: column;}
-#toolbar img{ height: 20px; margin-bottom:5px;}
+#toolbar img{ height: 30px; margin-bottom:5px;}
 
 .pig {
   width: 60px;

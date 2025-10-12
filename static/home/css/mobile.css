@@ -96,7 +96,7 @@
 @media screen and (max-width:1280px) { 
 
     .OneNav{ font-size: 16px; line-height: 70px;}
-    .logo img{ height: 40px;}
+    .logo img{ height: 40px !important;}
     .orient{ padding-top: 80px; margin-top: -80px;}
 
     .headerSearch, .language{ height: 70px;}
@@ -297,7 +297,7 @@
     .prolist li .text{ padding: 10px 0 0;}
     .prolist li .text div + div{ margin-top: 10px;}
    
-    .logo img{ height: 40px;}
+    .logo img{ height: 40px !important;}
 
     .side_bar_message,.side_bar_phone,.side_bar_wechat{ display: none !important;}
     
@@ -326,7 +326,7 @@
     .newswiper .swiper-slide .img img{ height: 160px;}
     .subnav a{ line-height: 50px;}
     .newpage a.listOn{ width: 100px;}
-    .idxNewsItem .more{ background:#fff; color:; }
+    .idxNewsItem .more{  }
 
   
     .newpage a span{ display: none;}
