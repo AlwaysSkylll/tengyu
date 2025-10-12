@@ -75,16 +75,29 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1200px;
+      }
 
-        @media (max-width: 1280px) {
+      @media (max-width: 1280px) {
+        .brand-detail {
           padding: 0 20px;
           font-size: 26px;
           line-height: 1.8;
           max-width: 900px;
         }
+      }
 
 
-        @media (max-width: 766px) {
+      @media (max-width: 750px) {
+        .brand-detail {
+          padding: 0 20px;
+          font-size: 20px;
+          line-height: 1.8;
+          max-width: 600px;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .brand-detail {
           padding: 0 20px;
           font-size: 14px;
           line-height: 1.8;
@@ -150,7 +163,7 @@
 
   <body>
     <header class="  ">
-      <div class="w90 z5 flex-between-center" style="height: 60px">
+      <div class="w90 z5 flex-between-center custom-header">
         <a href="./" class="logo"
           ><img
             src="./static/home/images/logo.png"
