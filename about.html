@@ -76,8 +76,15 @@
         width: 100%;
         max-width: 1200px;
 
+        @media (max-width: 1280px) {
+          padding: 0 20px;
+          font-size: 26px;
+          line-height: 1.8;
+          max-width: 900px;
+        }
 
-        @media (max-width: 768px) {
+
+        @media (max-width: 766px) {
           padding: 0 20px;
           font-size: 14px;
           line-height: 1.8;
@@ -173,7 +180,7 @@
               <a href="./about.html#partner" class="OneNav"><span>合作伙伴</span> </a>
             </li>
             <li class="">
-              <a href="./contact.html" class="OneNav"><span>联系方式</span> </a>
+              <a href="./about.html#contact" class="OneNav"><span>联系方式</span> </a>
             </li>
           </nav>
         </div>
@@ -235,7 +242,7 @@
             <a href="./about.html#segment" class="">设备设施</a>
             <a href="./about.html#brand" class="">品牌理念</a>
             <a href="./about.html#partner" class="">合作伙伴</a>
-            <a href="./contact.html" class="">联系我们</a>
+            <a href="./about.html#contact" class="">联系我们</a>
           </div>
         </div>
       </section>
@@ -484,18 +491,18 @@
           <div class="f20 text-uppercase">BRAND CONCEPT</div>
         </div>
         <div class="brand-detail">
-          <div>企业文化：树立腾宇品牌形象，创造腾宇人的梦想，成就腾宇人的骄傲；</div>
-          <div>企业精神：诚信，务实，创新，争先；</div>
-          <div>企业追求：致力行业持续发展；</div>
-          <div>经营理念：诚信为本，以人为本，品质为根；</div>
-          <div>员工素质：责任感，团结，诚信，敬业；</div>
-          <div>质量方针：科学管理，精心制造，顾客满意，持续改进；</div>
-          <div>人才观：德才兼备，以德为先，先德定人。</div>
+          <div>企业文化：<span style="font-weight: normal;">树立腾宇品牌形象，创造腾宇人的梦想，成就腾宇人的骄傲；</span></div>
+          <div>企业精神：<span style="font-weight: normal;">诚信，务实，创新，争先；</span></div>
+          <div>企业追求：<span style="font-weight: normal;">致力行业持续发展；</span></div>
+          <div>经营理念：<span style="font-weight: normal;">诚信为本，以人为本，品质为根；</span></div>
+          <div>员工素质：<span style="font-weight: normal;">责任感，团结，诚信，敬业；</span></div>
+          <div>质量方针：<span style="font-weight: normal;">科学管理，精心制造，顾客满意，持续改进；</span></div>
+          <div>人才观：<span style="font-weight: normal;">德才兼备，以德为先，先德定人。</span></div>
         </div>
       </section>
 
       <div class="orient" id="partner"></div>
-      <section class="posi pb-70">
+      <section class="posi pb-70" style="background: #F7F8F9">
         <div class="title wmax flex-center-center pt-70 pb-70 flex-column z5">
           <div class="f44 font-weight">合作伙伴</div>
           <div class="f20 text-uppercase">BUSINESS PARTNER</div>
@@ -518,6 +525,87 @@
           <div class="partner-card" role="listitem"><img src="./static/home/images/partner15.png" alt="合作伙伴15" /></div>
         </div>
       </section>
+
+      <div class="orient" id="contact"></div>
+      <section class="pt-70 pb-70" style="background: #ffffff">
+        <div class="w80">
+          <section class="flex-between wapFlex">
+            <div class="w50 contactStyle">
+              <div class="orient" id="contactStyle"></div>
+              <div class="f40 font-weight">联系方式</div>
+              <div class="bg-blue contactStyleLine mt-30 mb-30"></div>
+              <div class="item mt-70">
+                <div class="flex-center">
+                  <i class="iconfont icon-dianhua1 color-blue mr-10"></i>
+                  <div class="f26 font-weight ml-20 mr-30">电话</div>
+                  <div class="DIN font-weight f28">0572-8033975</div>
+                </div>
+                <div class="flex-center mt-10">
+                  <i
+                    class="iconfont icon-dianhua1 color-blue mr-10 opacity0"
+                  ></i
+                  ><span class="color-aaa DIN f18 ml-20 text-uppercase"
+                    >TEL</span
+                  >
+                </div>
+              </div>
+              <div class="item mt-50">
+                <div class="flex-center">
+                  <i class="iconfont icon-youxiang color-blue mr-10"></i>
+                  <div class="f26 font-weight ml-20 mr-30">邮箱</div>
+                  <div class="DIN font-weight f28">zjty888@qq.com</div>
+                </div>
+                <div class="flex-center mt-10">
+                  <i
+                    class="iconfont icon-youxiang color-blue mr-10 opacity0"
+                  ></i
+                  ><span class="color-aaa DIN f18 ml-20 text-uppercase"
+                    >mailbox</span
+                  >
+                </div>
+              </div>
+              
+              <div class="item mt-50">
+                <div class="flex-center">
+                  <i class="iconfont icon-daohangdizhi color-blue mr-10"></i>
+                  <div class="f26 font-weight ml-20 mr-30">地址</div>
+                  <div class="DIN font-weight f22">
+                    浙江省湖州市德清县洛舍镇杨树湾工业区
+                  </div>
+                </div>
+                <div class="flex-center mt-10">
+                  <i
+                    class="iconfont icon-daohangdizhi color-blue mr-10 opacity0"
+                  ></i
+                  ><span class="color-aaa DIN f18 ml-20 text-uppercase"
+                    >add</span
+                  >
+                </div>
+              </div>
+
+              <div class="item mt-50">
+                <div class="flex-center">
+                  <i class="iconfont icon-daohangdizhi color-blue mr-10"></i>
+                  <div class="f26 font-weight ml-20 mr-10">销售团队</div>
+                  <div class="DIN font-weight f28">项经理：13758272676 /  莫经理：18758186181</div>
+                </div>
+                <div class="flex-center mt-10">
+                  <i class="iconfont icon-daohangdizhi color-blue mr-10 opacity0"></i
+                  ><span class="color-aaa DIN f18 ml-20 text-uppercase"
+                    >st</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w50 shadow-dark gbookMessage">
+              <section
+                class="mapBox hidden bg-f9"
+                id="container"
+              ></section>
+            </div>
+          </section>
+        </div>
+      </section>
     </main>
     <!-- 底部 -->
   <footer class="swiper-slide footer bg-blue">
@@ -533,17 +621,17 @@
               <dd><a href="./about.html#segment">设备设施</a></dd>
               <dd><a href="./about.html#brand">品牌理念</a></dd>
               <dd><a href="./about.html#partner">合作伙伴</a></dd>
-              <dd><a href="./contact.html">联系我们</a></dd>
+              <dd><a href="./about.html#contact">联系我们</a></dd>
             </dl>
             <dl>
               <dt>
                 <a href="./product.html" class="f20 font-weight">产品中心</a>
                 <div class="line mt-25 mb-25"></div>
-                <dd><a href="./product.html">醇类</a></dd>
-                <dd><a href="./product.html">酮类</a></dd>
-                <dd><a href="./product.html">酯类</a></dd>
-                <dd><a href="./product.html">醚类</a></dd>
-                <dd><a href="./product.html">酸类</a></dd>
+                <dd><a href="./product.html#alcohol">醇类</a></dd>
+                <dd><a href="./product.html#ketone">酮类</a></dd>
+                <dd><a href="./product.html#ester">酯类</a></dd>
+                <dd><a href="./product.html#ether">醚类</a></dd>
+                <dd><a href="./product.html#acid">酸类</a></dd>
               </dt>
             </dl>
             <dl>
@@ -667,7 +755,7 @@
         <!--</li>-->
         <li class="side_bar_message">
           <a
-            href="./contact.html"
+            href="./about.html#contact"
             class="flex-center-center flex-column wmax hmax"
           >
             <div class=" ">
@@ -760,6 +848,71 @@
         },
         400
       )
+    })
+  </script>
+  <script
+    charset="utf-8"
+    src="https://map.qq.com/api/gljs?v=1.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"
+  ></script>
+  <script>
+    var lng = '120.119142' //117
+    var lat = '30.615682' //31
+    var sysName = '浙江腾宇新材料科技有限公司'
+    var sysTel = '0572-8033975'
+    var sysAds = '浙江省湖州市德清县洛舍镇杨树湾工业区'
+    var center = new TMap.LatLng(lat, lng) //设置中心点坐标
+    //初始化地图
+    var map = new TMap.Map('container', {
+      center: center,
+      zoom: 20,
+      // mapStyleId: 'style2'
+    })
+
+    //初始化marker
+    var marker = new TMap.MultiMarker({
+      id: 'marker-layer', //图层id
+      map: map,
+      styles: {
+        //点标注的相关样式
+        marker: new TMap.MarkerStyle({
+          width: 30,
+          height: 30,
+          anchor: { x: 15, y: 15 },
+          src: 'https://mapapi.qq.com/web/lbs/javascriptGL/demo/img/markerNew.png',
+        }),
+      },
+      geometries: [
+        {
+          //点标注数据数组
+          id: 'demo',
+          styleId: 'marker',
+          position: new TMap.LatLng(lat, lng),
+          properties: {
+            title: 'marker',
+          },
+        },
+      ],
+    })
+
+    //设置infoWindow
+    var infoWindow = new TMap.InfoWindow({
+      map: map,
+      position: center,
+      offset: { x: 0, y: -10 },
+      content:
+        "<div style='font-size:12px;text-align:left;'><p><span style='font-weight:bold;font-size:14px;color:#CC5522;'>" +
+        sysName +
+        '</span></p></span></p><p>地址：' +
+        sysAds +
+        "</p><p> 电话：<span style='color:#red;'>" +
+        sysTel +
+        '</span></p></div>',
+    })
+
+    //监听标注点击事件
+    marker.on('click', function (evt) {
+      //设置infoWindow
+      infoWindow.open() //打开信息窗
     })
   </script>
 </html>
