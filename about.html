@@ -943,15 +943,15 @@
     (function () {
       function setActiveByHash() {
         var hash = window.location.hash
-        if (hash === '#contact') {
-          // 头部导航：移除所有 on，给“联系方式”加上 on
+        if (hash === '#contact' || hash === '#partner') {
+          // 头部导航：移除所有 on，根据 hash 给对应项加上 on
           $('header nav li').removeClass('on')
-          $('header nav a[href$="#contact"]').closest('li').addClass('on')
+          $('header nav a[href$="' + hash + '"]').closest('li').addClass('on')
 
           // 页面子导航同步高亮
           if ($('.subnav').length) {
             $('.subnav a').removeClass('on')
-            $('.subnav a[href$="#contact"]').addClass('on')
+            $('.subnav a[href$="' + hash + '"]').addClass('on')
           }
         }
       }
