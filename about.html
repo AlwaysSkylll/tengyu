@@ -11,6 +11,12 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <style>
+      @font-face {
+        font-family: 'songke';  /* 自定义字体名称 */
+        src: url('./static/font/songke.TTF') format('truetype');  /* 路径根据实际调整 */
+        font-weight: normal;  /* 可选：定义字重 */
+        font-style: normal;   /* 可选：定义样式（如斜体） */
+      }
       .artBox img,
       .Detail img {
         display: block;
@@ -75,6 +81,7 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1200px;
+        font-family: 'songke', serif;
       }
 
       @media (max-width: 1280px) {
@@ -550,8 +557,8 @@
               <div class="item mt-70">
                 <div class="flex-center">
                   <i class="iconfont icon-dianhua1 color-blue mr-10"></i>
-                  <div class="f26 font-weight ml-20 mr-30">电话</div>
-                  <div class="DIN font-weight f28">0572-8033975</div>
+                  <div class="f22 font-weight ml-20 mr-30">电话</div>
+                  <div class="DIN font-weight f22">0572-8033975</div>
                 </div>
                 <div class="flex-center mt-10">
                   <i
@@ -565,8 +572,8 @@
               <div class="item mt-50">
                 <div class="flex-center">
                   <i class="iconfont icon-youxiang color-blue mr-10"></i>
-                  <div class="f26 font-weight ml-20 mr-30">邮箱</div>
-                  <div class="DIN font-weight f28">zjty888@qq.com</div>
+                  <div class="f22 font-weight ml-20 mr-30">邮箱</div>
+                  <div class="DIN font-weight f22">zjty888@qq.com</div>
                 </div>
                 <div class="flex-center mt-10">
                   <i
@@ -581,7 +588,7 @@
               <div class="item mt-50">
                 <div class="flex-center">
                   <i class="iconfont icon-daohangdizhi color-blue mr-10"></i>
-                  <div class="f26 font-weight ml-20 mr-30">地址</div>
+                  <div class="f22 font-weight ml-20 mr-30">地址</div>
                   <div class="DIN font-weight f22">
                     浙江省湖州市德清县洛舍镇杨树湾工业区
                   </div>
@@ -599,8 +606,8 @@
               <div class="item mt-50">
                 <div class="flex-center">
                   <i class="iconfont icon-daohangdizhi color-blue mr-10"></i>
-                  <div class="f26 font-weight ml-20 mr-10">销售团队</div>
-                  <div class="DIN font-weight f28">项经理：13758272676 /  莫经理：18758186181</div>
+                  <div class="f22 font-weight ml-20 mr-10">销售团队</div>
+                  <div class="DIN font-weight f22">项经理：13758272676 /  莫经理：18758186181</div>
                 </div>
                 <div class="flex-center mt-10">
                   <i class="iconfont icon-daohangdizhi color-blue mr-10 opacity0"></i
@@ -645,22 +652,25 @@
                 <dd><a href="./product.html#ester">酯类</a></dd>
                 <dd><a href="./product.html#ether">醚类</a></dd>
                 <dd><a href="./product.html#acid">酸类</a></dd>
+                <dd><a href="./product.html">更多</a></dd>
               </dt>
             </dl>
-            <dl>
-              <dt>
-                <a href="./news.html" class="f20 font-weight">新闻资讯</a>
-              </dt>
-            </dl>
-
+           
             <dl>
               <dt>
                 <a href="javascript:;" class="f20 font-weight">购买产品</a>
               </dt>
               <div class="line mt-25 mb-25"></div>
               <dd><a href="https://shop20b6729b64u53.1688.com/">阿里巴巴腾宇网店</a></dd>
-              <dd><a href="javascript:;">阿里巴巴高晶网店</a></dd>
+              <dd><a href="https://gaojingchem.1688.com">阿里巴巴高晶网店</a></dd>
             </dl>
+
+            <dl>
+              <dt>
+                <a href="./news.html" class="f20 font-weight">新闻资讯</a>
+              </dt>
+            </dl>
+
 
             <div class="footContact">
               <dt><a href="" class="f20 font-weight">联系我们</a></dt>
@@ -927,5 +937,30 @@
       //设置infoWindow
       infoWindow.open() //打开信息窗
     })
+  </script>
+  <script>
+    // 当访问 /about#contact 时，高亮 header 与子导航中的“联系方式”
+    (function () {
+      function setActiveByHash() {
+        var hash = window.location.hash
+        if (hash === '#contact') {
+          // 头部导航：移除所有 on，给“联系方式”加上 on
+          $('header nav li').removeClass('on')
+          $('header nav a[href$="#contact"]').closest('li').addClass('on')
+
+          // 页面子导航同步高亮
+          if ($('.subnav').length) {
+            $('.subnav a').removeClass('on')
+            $('.subnav a[href$="#contact"]').addClass('on')
+          }
+        }
+      }
+
+      // 初次加载与 hash 变化时执行
+      $(function () {
+        setActiveByHash()
+      })
+      window.addEventListener('hashchange', setActiveByHash)
+    })()
   </script>
 </html>
