@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>公司介绍-浙江腾宇新材料科技有限公司</title>
+    <title></title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <style>
@@ -167,7 +167,37 @@
     <script src="./static/home/js/swiper.js"></script>
     <script src="./static/home/js/wow.min.js"></script>
   </head>
+  <script>
+    // 当访问 /about#contact 时，高亮 header 与子导航中的“联系方式”
+    (function () {
+      function setActiveByHash() {
+        var hash = window.location.hash
+        var titleMap = {
+          '#partner': '合作伙伴',
+          '#contact': '联系我们',
+        }
+        document.title = (titleMap[hash] || '公司介绍') + '-浙江腾宇新材料科技有限公司'
 
+        if (hash === '#contact' || hash === '#partner') {
+          // 头部导航：移除所有 on，根据 hash 给对应项加上 on
+          $('header nav li').removeClass('on')
+          $('header nav a[href$="' + hash + '"]').closest('li').addClass('on')
+
+          // 页面子导航同步高亮
+          if ($('.subnav').length) {
+            $('.subnav a').removeClass('on')
+            $('.subnav a[href$="' + hash + '"]').addClass('on')
+          }
+        }
+      }
+
+      // 初次加载与 hash 变化时执行
+      $(function () {
+        setActiveByHash()
+      })
+      window.addEventListener('hashchange', setActiveByHash)
+    })()
+  </script>
   <body>
     <header class="  ">
       <div class="w90 z5 flex-between-center custom-header">
@@ -938,29 +968,5 @@
       infoWindow.open() //打开信息窗
     })
   </script>
-  <script>
-    // 当访问 /about#contact 时，高亮 header 与子导航中的“联系方式”
-    (function () {
-      function setActiveByHash() {
-        var hash = window.location.hash
-        if (hash === '#contact' || hash === '#partner') {
-          // 头部导航：移除所有 on，根据 hash 给对应项加上 on
-          $('header nav li').removeClass('on')
-          $('header nav a[href$="' + hash + '"]').closest('li').addClass('on')
-
-          // 页面子导航同步高亮
-          if ($('.subnav').length) {
-            $('.subnav a').removeClass('on')
-            $('.subnav a[href$="' + hash + '"]').addClass('on')
-          }
-        }
-      }
-
-      // 初次加载与 hash 变化时执行
-      $(function () {
-        setActiveByHash()
-      })
-      window.addEventListener('hashchange', setActiveByHash)
-    })()
-  </script>
+  
 </html>
